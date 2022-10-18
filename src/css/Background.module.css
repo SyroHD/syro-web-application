@@ -1,0 +1,11 @@
+html {
+  font-size: 62.5%;
+}
+
+.gradient {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: rgb(65, 80, 106);
+  background-image: linear-gradient(207deg, rgb(65, 80, 106) 0%, rgb(39, 49, 65) 100%);
+}/*# sourceMappingURL=Background.module.css.map */

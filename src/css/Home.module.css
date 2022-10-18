@@ -1,0 +1,310 @@
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.equipment {
+  position: relative;
+  width: 100%;
+  padding-top: 70vh;
+}
+
+.shoes {
+  width: 400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  margin: 0 auto;
+  -webkit-animation: animateShoe 10s ease infinite;
+          animation: animateShoe 10s ease infinite;
+}
+
+.plate {
+  position: absolute;
+  left: -100px;
+  right: 0;
+  bottom: 170px;
+  margin: 0 auto;
+  width: 170px;
+  -webkit-animation: animatePlate 120s linear infinite;
+          animation: animatePlate 120s linear infinite;
+}
+
+.watch {
+  width: 160px;
+  z-index: 1;
+  position: absolute;
+  left: 400px;
+  right: 0;
+  bottom: 240px;
+  margin: 0 auto;
+  -webkit-animation: animateWatch 7s ease infinite;
+          animation: animateWatch 7s ease infinite;
+}
+
+.dumbbell {
+  width: 190px;
+  z-index: 1;
+  position: absolute;
+  left: -230px;
+  right: 0;
+  bottom: 60px;
+  margin: 0 auto;
+  -webkit-animation: animateDumbbell 5s ease infinite;
+          animation: animateDumbbell 5s ease infinite;
+}
+
+.kettlebell {
+  width: 120px;
+  position: absolute;
+  left: 120px;
+  right: 0;
+  bottom: 320px;
+  margin: 0 auto;
+  -webkit-animation: animateKettlebell 13s ease infinite;
+          animation: animateKettlebell 13s ease infinite;
+}
+
+.flasche {
+  width: 60px;
+  position: absolute;
+  left: 280px;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  -webkit-animation: animateFlask 10s ease infinite;
+          animation: animateFlask 10s ease infinite;
+}
+
+.slogan {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+
+.description {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  opacity: 0.6;
+}
+
+.information {
+  text-align: center;
+}
+
+.btn {
+  padding: 20px 80px;
+  font-size: 2rem;
+  color: #41506a;
+  font-weight: bold;
+  background-color: #ffd325;
+  border: 0;
+  border-radius: 50px;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 5px #ffd325, 0 0 20px rgba(255, 211, 37, 0.7), 0 0 60px rgba(255, 211, 37, 0.4), 0 0 100px rgba(255, 211, 37, 0.2);
+}
+
+@-webkit-keyframes animateShoe {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes animateShoe {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes animateWatch {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes animateWatch {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes animateKettlebell {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes animateKettlebell {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes animatePlate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes animatePlate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes animateFlask {
+  0%, 100% {
+    transform: translateY(0) rotate(40deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(35deg);
+  }
+}
+@keyframes animateFlask {
+  0%, 100% {
+    transform: translateY(0) rotate(40deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(35deg);
+  }
+}
+@-webkit-keyframes animateDumbbell {
+  0%, 100% {
+    transform: scale(1) rotate(60deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(65deg);
+  }
+}
+@keyframes animateDumbbell {
+  0%, 100% {
+    transform: scale(1) rotate(60deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(65deg);
+  }
+}
+@media screen and (max-width: 1350px) {
+  .equipment {
+    padding-top: 76vh;
+  }
+  .shoes {
+    width: 400px;
+  }
+  .dumbbell {
+    width: 200px;
+  }
+  .flasche {
+    width: 60px;
+  }
+  .watch {
+    width: 140px;
+  }
+  .plate {
+    width: 180px;
+  }
+  .kettlebell {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .equipment {
+    padding-top: 65vh;
+  }
+  .shoes {
+    width: 350px;
+  }
+  .dumbbell {
+    width: 180px;
+  }
+  .watch {
+    width: 130px;
+    left: 350px;
+    bottom: 200px;
+  }
+  .plate {
+    width: 150px;
+  }
+  .kettlebell {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .slogan {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .equipment {
+    padding-top: 60vh;
+  }
+  .shoes {
+    width: 200px;
+  }
+  .dumbbell {
+    width: 100px;
+    left: -120px;
+  }
+  .watch {
+    width: 70px;
+    left: 160px;
+    bottom: 150px;
+  }
+  .plate {
+    width: 80px;
+    bottom: 100px;
+  }
+  .flasche {
+    width: 35px;
+    left: 130px;
+    bottom: 20px;
+  }
+  .kettlebell {
+    width: 60px;
+    bottom: 180px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .slogan {
+    font-size: 1.8rem;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+  .btn {
+    padding: 12px 40px;
+    font-size: 1.7rem;
+  }
+}/*# sourceMappingURL=Home.module.css.map */

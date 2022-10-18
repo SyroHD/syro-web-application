@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 259 335">
+  <g id="Ebene_1" data-name="Ebene 1" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <g id="Layer_1">
+      <path class="cls-1" d="M130,207c-43,0-78-35-78-78,0-4,3-8,7-8s7,4,7,8c0,35,29,63,64,63,4,0,7,3,7,8,0,4-3,7-7,7Zm15,128h-34c-2,0-3-1-5-2-1-1-2-3-2-6l1-19h-12c-5,0-8-3-8-7v-34c0-4,3-7,8-7h12l1-32c0-4,3-7,7-7,10,0,22,1,33,1,4,0,7,3,7,7v32h12c5,0,8,3,8,7v34c0,4-3,7-8,7h-13v19c0,4-3,7-7,7Zm22-120c33-14,55-47,55-85,0-51-42-92-92-92S37,80,37,130c0,38,22,70,55,85v39C38,238,0,188,0,130,0,58,58,0,130,0s129,59,129,130c0,58-38,108-92,124v-39Z"/>
+    </g>
+  </g>
+</svg>

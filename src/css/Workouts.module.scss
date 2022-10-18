@@ -1,0 +1,99 @@
+@import "./variables";
+
+.wrapper {
+  color: white;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.workout-header {
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+
+.workout-information {
+  margin: auto;
+  font-size: $paragraph-font-size-XL;
+  font-size: 2rem;
+  color: white;
+  opacity: 0.6;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+}
+
+.select-equipment {
+  width: 25%;
+}
+
+.select-gender {
+  width: 25%;
+}
+
+.informational-text {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  opacity: 0.9;
+  font-size: 2rem;
+}
+
+.select-weekday-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.workouts {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .btn-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .workout-header {
+    font-size: $header-font-size-MD;
+  }
+
+  .workout-information {
+    font-size: $paragraph-font-size-MD;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .informational-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .btn-container {
+    width: 100%;
+  }
+
+  .workout-header {
+    font-size: $header-font-size-SM;
+  }
+
+  .workout-information {
+    font-size: $paragraph-font-size-SM;
+  }
+}

@@ -1,0 +1,99 @@
+@import "./variables";
+
+.selection-container {
+  width: 100%;
+}
+
+//Desktop Design
+
+.weekdays-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weekday {
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 20px 50px;
+  transition: 0.25s;
+}
+
+.weekday:hover {
+  cursor: pointer;
+  color: $accent-color;
+}
+
+.weekday::after {
+  content: "";
+  position: absolute;
+  background-color: $accent-color;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.25s;
+}
+
+.weekday:hover::after {
+  width: 100%;
+}
+
+.selected {
+  background-color: rgba($color: white, $alpha: 0.15);
+}
+
+//Toggle between Mobile and Desktop View for Weekday Selection
+
+.mobile-container {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .weekdays-container {
+    display: none;
+  }
+
+  .mobile-container {
+    display: block;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+//Mobile Design
+
+.weekday-selection-unchecked {
+  color: white;
+  background-color: transparent;
+  padding: 3% 5%;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba($color: #000000, $alpha: 0.8),
+    -1px -1px 6px rgba($color: white, $alpha: 0.1);
+}
+
+.weekday-selection-unchecked:hover {
+  color: $accent-color;
+  box-shadow: 2px 2px 6px rgba($color: #000000, $alpha: 0.8),
+    -1px -1px 6px rgba($color: white, $alpha: 0.1),
+    inset 2px 2px 6px rgba($color: #000000, $alpha: 0.8),
+    inset -1px -1px 6px rgba($color: white, $alpha: 0.1);
+}
+
+.weekday-selection-checked {
+  color: $accent-color;
+  background-color: transparent;
+  padding: 3% 5%;
+  border: 0;
+  border-radius: 5%;
+  box-shadow: inset 2px 2px 6px rgba($color: #000000, $alpha: 0.8),
+    inset -1px -1px 6px rgba($color: white, $alpha: 0.1);
+}

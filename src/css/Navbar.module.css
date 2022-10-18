@@ -1,0 +1,103 @@
+html {
+  font-size: 62.5%;
+}
+
+.logo {
+  width: 170px;
+}
+
+.navigation {
+  margin: 1rem 1rem;
+  list-style: none;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.navigation-item {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: all 0.25s ease;
+  margin: 0 4.5rem;
+  opacity: 0.8;
+  font-size: 2rem;
+  padding-bottom: 6px;
+  transition: 0.3s;
+}
+
+.navigation-item:last-of-type {
+  margin-right: 0;
+}
+
+.navigation-item-active {
+  opacity: 1;
+  color: white;
+}
+
+.navigation-item:hover {
+  color: #ffd325;
+  opacity: 1;
+}
+
+.navigation-item::after {
+  content: "";
+  position: absolute;
+  background-color: #ffd325;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.25s;
+}
+
+.navigation-item:hover::after {
+  width: 100%;
+}
+
+.mobile-navigation {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-element {
+  transition: all 0.25s ease;
+}
+
+.nav-element:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.mobile-icon {
+  width: 25px;
+  display: block;
+  margin: 5px auto;
+}
+
+.navigation-item-mobile {
+  opacity: 0.8;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: all 0.25s ease;
+}
+
+.navigation-item-mobile:hover {
+  color: white;
+}
+
+.navigation-mobile-active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

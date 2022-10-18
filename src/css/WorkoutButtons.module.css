@@ -1,0 +1,95 @@
+html {
+  font-size: 62.5%;
+}
+
+.btn-unchecked {
+  z-index: 1;
+  background-color: transparent;
+  padding: 40px;
+  border: 0;
+  margin: 0 20px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8), -1px -1px 6px rgba(255, 255, 255, 0.1);
+}
+
+.btn-unchecked:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8), -1px -1px 6px rgba(255, 255, 255, 0.1), inset 2px 2px 6px rgba(0, 0, 0, 0.8), inset -1px -1px 6px rgba(255, 255, 255, 0.1);
+}
+
+.btn-checked {
+  z-index: 1;
+  background-color: transparent;
+  padding: 40px;
+  border: 0;
+  margin: 0 20px;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.8), inset -1px -1px 6px rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  opacity: 40%;
+  fill: white;
+}
+
+.icon-clicked {
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+  fill: #ffd325;
+  filter: drop-shadow(0 0 14px rgba(255, 211, 37, 0.5));
+}
+
+@media screen and (max-width: 1280px) {
+  .btn-unchecked,
+.btn-checked {
+    padding: 30px;
+    margin: 0 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .icon,
+.icon-clicked {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .icon,
+.icon-clicked {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .btn-unchecked,
+.btn-checked {
+    padding: 20px;
+    margin: 0 8px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .icon,
+.icon-clicked {
+    width: 20px;
+    height: 20px;
+  }
+  .btn-unchecked,
+.btn-checked {
+    margin: 0 4px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .icon,
+.icon-clicked {
+    width: 15px;
+    height: 15px;
+  }
+  .btn-unchecked,
+.btn-checked {
+    padding: 17px;
+  }
+}/*# sourceMappingURL=WorkoutButtons.module.css.map */
